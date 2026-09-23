@@ -65,7 +65,6 @@ github-contribution-spaceship/
 │
 ├── README.md                    # Documentação
 ├── LICENSE                      # Licença do projeto
-└── package.json                 # Configuração do projeto
 ```
 
 ---
