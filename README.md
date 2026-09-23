@@ -136,13 +136,13 @@ Image displayed in the README
 
 ---
 
-## 👩🏻‍🚀 Autoria
+## 👩🏻‍🚀 Author
 
 This project was conceived and customized by **@gabivsv**, using JavaScript, Node.js, SVG, CSS, and GitHub Actions, with AI assistance in parts of the implementation.
 
 ---
 
-## 📄 Licença
+## 📄 License
 
 This project is available under the **MIT License**.
 
