@@ -1,14 +1,14 @@
 # 🚀 GitHub Contribution Spaceship
+[🇧🇷 Português](README.pt-BR.md)
+> **Turn your GitHub contribution graph into a journey through space.** 🌌
 
-> **Transforme seu gráfico de contribuições do GitHub em uma viagem pelo espaço.** 🌌
+A custom space animation for GitHub contribution graphs, built with JavaScript, Node.js, SVG, CSS, and GitHub Actions.
 
-Uma animação espacial personalizada para gráficos de contribuições do GitHub, desenvolvida com **JavaScript, Node.js, SVG, CSS e GitHub Actions**.
-
-Em vez da tradicional cobrinha 🐍, este projeto transforma o calendário de contribuições em um **céu estrelado**, onde uma nave espacial percorre uma rota formada pelas semanas de maior atividade. ✨
+Instead of the traditional snake 🐍, this project transforms the contribution calendar into a starry sky, where a spaceship travels along a route formed by the most active weeks. ✨
 
 ---
 
-## 🌌 Demonstração
+## 🌌 Demo
 
 <picture>
   <source
@@ -25,234 +25,124 @@ Em vez da tradicional cobrinha 🐍, este projeto transforma o calendário de co
 
 ---
 
-## 🛰️ Como funciona?
+## 🛰️ How does it work?
 
-O projeto consulta o **calendário de contribuições do GitHub** e transforma esses dados em uma visualização SVG animada, mantendo os dados reais do GitHub.
+The project queries the **GitHub contribution calendar** and transforms this data into an animated SVG visualization while preserving the real GitHub data.
 
-* ⭐ Cada contribuição é representada por uma estrela, de acordo com o nível de atividade;
-* 🌠 Uma estrela de destaque é selecionada por semana para formar a rota;
-* 🛸 A nave percorre essa rota e interage visualmente com as estrelas;
-* ⚙️ O GitHub Actions gera automaticamente as versões do gráfico para os temas claro e escuro.
-
----
-
-## 🧠 Tecnologias
-
-| Tecnologia                  | Utilização                  |
-| --------------------------- | --------------------------- |
-| 🟨 **JavaScript / Node.js** | Lógica e geração do gráfico |
-| 🎨 **SVG**                  | Construção da visualização  |
-| ✨ **CSS**                   | Animações e efeitos visuais |
-| ⚙️ **GitHub Actions**       | Automação da geração        |
-| 🔗 **GitHub GraphQL API**   | Consulta das contribuições  |
+* ⭐ Each contribution is represented by a star according to the activity level;
+* 🌠 One highlighted star is selected per week to form the route;
+* 🛸 The spaceship travels along this route and visually interacts with the stars;
+* ⚙️ GitHub Actions automatically generates the graph versions for light and dark themes.
 
 ---
 
-## 📁 Estrutura do projeto
+## 🧠 Technologies
+
+| Technology                  | Use                             |
+| --------------------------- | ----------------------------    |
+| 🟨 **JavaScript / Node.js** | Graph logic and generation      |
+| 🎨 **SVG**                  | Visualization construction      |
+| ✨ **CSS**                  | Animations and visual effects   |
+| ⚙️ **GitHub Actions**       | Generation automation           |
+| 🔗 **GitHub GraphQL API**   | Contribution queries            |
+
+---
+
+## 📁 Project structure
 
 ```text
 github-contribution-spaceship/
 │
 ├── .github/
 │   └── workflows/
-│       └── spaceship.yml       # Executa e publica o gerador
+│       └── spaceship.yml       # Runs and publishes the generator
 │
 ├── src/
-│   ├── github.mjs              # Consulta as contribuições
-│   ├── stars.mjs               # Cria estrelas, legenda e rota
-│   ├── spaceship.mjs            # Desenha a nave
-│   ├── animation.mjs            # Define as animações CSS
-│   └── generate.mjs             # Junta os componentes e gera o SVG
+│   ├── github.mjs              # Queries contributions
+│   ├── stars.mjs               # Creates stars, legend, and route
+│   ├── spaceship.mjs            # Draws the spaceship
+│   ├── animation.mjs            # Defines CSS animations
+│   └── generate.mjs             # Combines the components and generates the SVG
 │
-├── README.md                    # Documentação
-├── LICENSE                      # Licença do projeto
-└── package.json                 # Configuração do projeto
+├── README.md                    # Documentation
+├── LICENSE                      # Project license
+└── package.json                 # Project configuration
 ```
 
 ---
 
-## 🚀 Usar no próprio perfil
+## 🚀 Use it on your own profile
 
-A forma mais simples de utilizar o projeto é fazer um **fork** deste repositório e copiar os arquivos para o repositório especial do seu perfil.
+**Fork** this repository and adapt it to your GitHub profile.
 
-O repositório de perfil precisa ter **o mesmo nome do seu usuário**.
-
-### 1. 📂 Copie os arquivos
-
-Copie o workflow:
+The profile repository must have the same name as your username:
 
 ```text
-.github/workflows/spaceship.yml
+YOUR_USERNAME/YOUR_USERNAME
 ```
+Then:
 
-e a pasta:
-
-```text
-src/
-```
-
-para o repositório do seu perfil.
-
-### 2. 🌿 Crie a branch `output`
-
-Crie uma branch chamada:
-
-```text
-output
-```
-
-Essa branch será utilizada para armazenar os SVGs gerados automaticamente.
-
-### 3. ⚙️ Configure as permissões
-
-No repositório, acesse:
-
-**Settings → Actions → General → Workflow permissions**
-
-e habilite:
-
-**Read and write permissions**
-
-### 4. ▶️ Execute o workflow
-
-Acesse:
-
-**Actions → Generate contribution spaceship → Run workflow**
-
-Selecione a branch `main` e execute.
-
-O GitHub Actions irá consultar suas contribuições e gerar os arquivos automaticamente.
-
+* Copy the `src/` folder and the workflow `.github/workflows/spaceship.yml`.
+* Create a branch named `output`.
+* Under **Settings → Actions → General → Workflow permissions**, enable **Read and write permissions**.
+* Run the workflow under **Actions → Generate contribution spaceship → Run workflow**.
 ---
 
-## 👤 Adicionar ao README do perfil
+## 👤 Add it to your profile README
 
-Depois que o workflow terminar, adicione o seguinte trecho ao README do seu perfil.
+After the workflow finishes, add the following snippet to your profile README.
 
-Substitua `SEU_USUARIO` pelo seu nome de usuário do GitHub:
+Replace `YOUR_USERNAME` with your GitHub username:
 
 ```html
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/SEU_USUARIO/SEU_USUARIO/output/github-contribution-spaceship-dark.svg?v=1">
+    srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-spaceship-dark.svg?v=1">
 
   <source
     media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/SEU_USUARIO/SEU_USUARIO/output/github-contribution-spaceship.svg?v=1">
+    srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-spaceship.svg?v=1">
 
   <img
     alt="Nave espacial percorrendo o gráfico de contribuições"
-    src="https://raw.githubusercontent.com/SEU_USUARIO/SEU_USUARIO/output/github-contribution-spaceship.svg?v=1">
+    src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-spaceship.svg?v=1">
 </picture>
 ```
 
-## 🎨 Personalização
+## 🧩 Architecture
 
-A estrutura foi separada em diferentes módulos para facilitar a personalização.
-
-### 🛸 Nave
-
-O arquivo:
-
-```text
-src/spaceship.mjs
-```
-
-controla elementos visuais da nave, como:
-
-* formato;
-* detalhes;
-* cores;
-* propulsão.
-
-### ⭐ Estrelas
-
-O arquivo:
-
-```text
-src/stars.mjs
-```
-
-controla:
-
-* tamanho das estrelas;
-* níveis de contribuição;
-* cores;
-* rota;
-* legenda.
-
-### ✨ Animações
-
-O arquivo:
-
-```text
-src/animation.mjs
-```
-
-define:
-
-* velocidade da nave;
-* brilho;
-* pulsação das estrelas;
-* animação da propulsão;
-* efeitos de movimento.
-
-### 🧩 Geração do SVG
-
-O arquivo:
-
-```text
-src/generate.mjs
-```
-
-é responsável por reunir os componentes e gerar a imagem final.
-
-Para alterar uma cor, procure por um código hexadecimal, por exemplo:
-
-```text
-#a78bfa
-```
-
-e substitua pela cor desejada.
-
----
-
-## 🧩 Arquitetura
-
-O fluxo principal do projeto pode ser resumido assim:
+The project's main flow can be summarized as follows:
 
 ```text
 GitHub GraphQL API
         ↓
-Calendário de contribuições
+Contribution calendar
         ↓
-Processamento dos dados
+Data processing
         ↓
-Estrelas + níveis de atividade
+Stars + activity levels
         ↓
-Definição da rota
+Route definition
         ↓
-Nave espacial
+Spaceship
         ↓
 SVG + CSS
         ↓
 GitHub Actions
         ↓
-Imagem exibida no README
+Image displayed in the README
 ```
 
 ---
 
 ## 👩🏻‍🚀 Autoria
 
-Este projeto foi idealizado e personalizado por **@gabivsv**, utilizando JavaScript, Node.js, SVG, CSS e GitHub Actions, com assistência de IA em partes da implementação.
-
-
+This project was conceived and customized by **@gabivsv**, using JavaScript, Node.js, SVG, CSS, and GitHub Actions, with AI assistance in parts of the implementation.
 
 ---
 
 ## 📄 Licença
 
-Este projeto está disponível sob a **MIT License**.
+This project is available under the **MIT License**.
 
