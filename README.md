@@ -246,7 +246,7 @@ Imagem exibida no README
 
 ## 👩🏻‍🚀 Autoria
 
-Este projeto foi **idealizado e personalizado por @gabivsv**, utilizando JavaScript, Node.js, SVG, CSS e GitHub Actions, com assistência de IA em partes da implementação.
+Este projeto foi idealizado e personalizado por **@gabivsv**, utilizando JavaScript, Node.js, SVG, CSS e GitHub Actions, com assistência de IA em partes da implementação.
 
 
 
