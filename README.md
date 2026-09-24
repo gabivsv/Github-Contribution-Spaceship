@@ -137,7 +137,7 @@ Image displayed in the README
 
 ## 👩🏻‍🚀 Author
 
-This project was conceived and customized by **@gabivsv**, using JavaScript, Node.js, SVG, CSS, and GitHub Actions, with AI assistance in parts of the implementation.
+This project was conceived and customized by [@gabivsv](https://github.com/gabivsv), using JavaScript, Node.js, SVG, CSS, and GitHub Actions, with AI assistance in parts of the implementation.
 
 ---
 
